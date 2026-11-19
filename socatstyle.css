@@ -108,6 +108,8 @@ body{
 }
 
 
+
+
 .card {
     background-color: #36cbcc;
     border: 3px solid #f8f697;
@@ -136,39 +138,91 @@ body{
 
 
 
-/**************************gallery*********************/
-
-
-
-
-
+/**************************Taulukko*********************/
+.caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#faffc7;
+}
+.table {
+    width:300;
+    border-collapse: collapse;
+}
+.table, th, td {
+    border: 4px solid #f8f697;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: left;
+}
 
 /*******************KUVAT***********************/
 
 .kissa-kuva {
-    width: 35%;           
-    max-width: 200px;      
-    height: auto;          
+    width: 200%;           
+    max-width: 250px;      
+    height: auto; 
     border-radius: 8px;   
     margin-bottom: 15px;  
 }
 
 .ruoka {
-    width: 150%;           
-    max-width: 200px;      
+    width: 200%;           
+    max-width: 250px;      
     height: auto;          
     border-radius: 8px;   
     margin-bottom: 15px;  
 }
 
 .lelu {
-    width: 150%;           
-    max-width: 200px;      
+    width: 200%;           
+    max-width: 250px;      
     height: auto;          
     border-radius: 8px;   
     margin-bottom: 15px;  
 }
-
+/*******************lomake********************/
+body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f3d2d6;
+    }
+    .lomake-laatikko {
+      max-width: 400px;
+      background: #36cbcc;
+      border: 3px solid #f8f697;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* Pitää laatikot saman levyisinä */
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
 
 
 
@@ -183,14 +237,18 @@ body{
    padding: 20px;
    border:  3px solid  #f8f697;
    border-radius: 6px;
-
-}
-.sidebar ul {
-    list-style: none;
+   vertical-align: top;
+   overflow-wrap: break-word;
 }
 .sidebar h2 {
     color: #faffc7;
+    max-width: 100%;
 }
+
+.sidebar ul {
+    list-style: none;
+}
+
 .sidebar a {
     color: #faffc7;
     font-weight: bold;
