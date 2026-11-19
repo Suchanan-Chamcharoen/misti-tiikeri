@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3d2d6;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+
+
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+
+
+    grid-template-rows: 
+    auto
+    auto
+    1fr
+    auto;
+
+
+    min-height: 100vh;
+    gap:20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+
+/************************HEADER*******************/
+.header {
+    grid-area: header;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #36cbcc;
+    padding: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #faffc7;
+    border: 3px solid #f8f697;
+    border-radius: 6px;
+
+}
+
+/******************NAV****************/
+.nav {
+    grid-area: nav;
+    background-color: #36cbcc;
+    border:3px solid #f8f697;
+    border-radius: 6px;
+    
+}
+.nav ul {
+    display:flex;
+    list-style: none;
+    
+}
+.nav a {
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color:#faffc7;
+}
+.nav a:hover, nav a:focus {
+    background-color: #2dacac;
+}
+
+
+
+
+/*******************MAIN*********************/
+
+.main {
+    grid-area: main;
+}
+.main h3{
+    color: #faffc7;
+}
+.main h2{
+    margin-bottom: 20px;
+    color: #faffc7;
+}
+
+.main p{
+    font-size: 17px;
+    color:#faffc7;
+}
+
+.main a:hover{
+    color: rgb(95, 95, 94);
+}
+
+.main a{
+   
+    text-decoration: none;
+}
+
+
+
+
+.card {
+    background-color: #36cbcc;
+    border: 3px solid #f8f697;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: #faffc7;
+}
+
+.card-video {
+    background-color: #36cbcc;
+    border: 3px solid #f8f697;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: #faffc7;
+}
+.card h3{
+    margin-bottom: 10px;
+}
+.card p {
+    margin-bottom: 5px;
+    line-height: 1.25;
+    color:#faffc7;
+}
+
+
+
+/**************************Taulukko*********************/
+.caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#faffc7;
+}
+.table {
+    width:300;
+    border-collapse: collapse;
+}
+.table, th, td {
+    border: 4px solid #f8f697;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: left;
+}
+
+/*******************KUVAT***********************/
+
+.kissa-kuva {
+    width: 200%;           
+    max-width: 250px;      
+    height: auto; 
+    border-radius: 8px;   
+    margin-bottom: 15px;  
+}
+
+.ruoka {
+    width: 200%;           
+    max-width: 250px;      
+    height: auto;          
+    border-radius: 8px;   
+    margin-bottom: 15px;  
+}
+
+.lelu {
+    width: 200%;           
+    max-width: 250px;      
+    height: auto;          
+    border-radius: 8px;   
+    margin-bottom: 15px;  
+}
+/*******************lomake********************/
+body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f3d2d6;
+    }
+    .lomake-laatikko {
+      max-width: 400px;
+      background: #36cbcc;
+      border: 3px solid #f8f697;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* Pitää laatikot saman levyisinä */
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+
+
+
+
+
+/******************SIDERBAR*********************/
+
+.sidebar {
+   grid-area: sidebar;
+   background-color: #36cbcc;
+   padding: 20px;
+   border:  3px solid  #f8f697;
+   border-radius: 6px;
+   vertical-align: top;
+   overflow-wrap: break-word;
+}
+.sidebar h2 {
+    color: #faffc7;
+    max-width: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    color: #faffc7;
+    font-weight: bold;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    color: rgb(95, 95, 94);
+}
+
+
+
+
+/************************FOOTER******************/
+
+.footer {
+
+    grid-area: footer;
+    background-color: #36cbcc;
+    border: 3px solid #f8f697;
+    padding: 20px;
+    color: #faffc7;
+    border-radius: 6px;
+}
